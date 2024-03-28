@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="signup.css">
+    <title>Sign up-Spotify</title>
+</head>
+<body>
+    <!-- <div class="whole"> -->
+   <header>
+    <div class="main">
+            <img src="icon.png" alt="" id="imge">
+    </div>
+   </header>
+    <section>
+        <div id="cont">
+            <form id="signupForm" method="post" autocomplete="off">
+            <!-- <div id="mainnn"> -->
+            <br>
+            <h1 class="signup">Sign up to start</h1>
+            <h1 class="listen">listening</h1>
+            <div class="input1">
+            <div class="field1">
+                <p class="em">Email or username</p>
+                <input type="text"   name="email" placeholder="Email or username" id="email" required>
+            </div>
+            <br>
+            <div class="field1">
+                <p class="p1">Password</p>
+                <div class="pass">
+                    <input type="Password" id="pass1" name="Password" placeholder="Password" required>
+                    <img onclick='togglePasswordVisibility()' class='eye-icon' src="eyeshow.png">
+                </div>
+                </div>
+<br>
+                    
+                    <div class="field1">
+                   <p class="cp">Confirm password</p>
+                <div class="pass">
+                    <input type="Password" id="pass2" name="Password" placeholder="Confirm Password" required>
+                </div>
+            </div>
+            </div>
+            
+         
+            <div class="next">
+                <button type="submit" id="next">Next</button>
+            </div>
+            <div class="or">
+                <div class="line"></div>
+                <p>or</p>
+                <div class="line"></div>
+            </div>
+            <div class="buttons">
+                <button class="google" id="g"><img src="google.png" alt=""><span>Continue with Google</span></button>
+                <button class="facebook" id="f"><img src="facebook.png" alt=""><span>Continue with Facebook</span></button>
+                <button class="apple" id="a"><img src="apple.png" alt=""><span>Continue with Apple</span></button>
+            </div>
+            <div class="hr"></div>  
+            <div class="already">
+                <label class="alread">Already have an account? </label>
+                <a href="login.html" class="login"><u>Login in here</u></a>
+            </div>
+        </form>
+            <div id="customAlert" class="custom-alert">
+                <p id="customAlertMessage"></p>
+                <button class="close-btn" onclick="hideCustomAlert()">Ok</button>
+            </div>
+        </div>
+        <div id="overlay"></div>
+    </section>
+    <footer>
+        <div class="footer">
+            <p>This site is protected by reCAPTCHA and the Google <u>Privacy Policy</u> and <u> Terms of Service</u> apply.</p>
+        </div>
+
+    </footer>
+<!-- </div> -->
+<script>
+function togglePasswordVisibility() {
+    const passwordInput = document.getElementById('pass1');
+    const passwordInput2 = document.getElementById('pass2');
+    const toggleIcon = document.querySelector('.eye-icon');
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        passwordInput2.type = 'text';
+        passwordInput.style.border = 'none';
+        passwordInput.style.padding = '0';
+        passwordInput.style.outline = 'none';
+        passwordInput2.style.border = 'none';
+        passwordInput2.style.padding = '0';
+        passwordInput2.style.outline = 'none';
+        passwordInput.style.height='25';
+        passwordInput2.style.height='25';
+        toggleIcon.src = 'eyeshow.png'; // Replace with the path to your eye-off icon
+    } else {
+        passwordInput.type = 'password';
+        passwordInput2.type = 'password';
+        passwordInput.style.border = 'none';
+        passwordInput.style.padding = '0';
+        passwordInput.style.outline = 'none';
+        passwordInput2.style.border = 'none';
+        passwordInput2.style.padding = '0';
+        passwordInput2.style.outline = 'none';
+        passwordInput.style.height='25';
+        passwordInput2.style.height='25';
+        toggleIcon.src = 'eyehide.png'; // Replace with the path to your eye icon
+    }
+}
+document.getElementById("signupForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var username = document.getElementById("email").value;
+            var password = document.getElementById("pass1").value;
+            var confirmPassword = document.getElementById("pass2").value;
+            var customAlert = document.getElementById("customAlert");
+            var customAlertMessage = document.getElementById("customAlertMessage");
+            var overlay = document.getElementById("overlay");
+
+
+            if (password !== confirmPassword) {
+                customAlertMessage.innerText = "password does not match!";
+                customAlert.style.display = "block";
+                overlay.style.display = "block";
+                return;
+            }
+
+            // Check if user already exists in localStorage
+            var existingUsers = JSON.parse(localStorage.getItem("users")) || [];
+            var existingUser = existingUsers.find(function(user) {
+                return user.username === username;
+            });
+
+            if (existingUser) {
+                customAlertMessage.innerText = "Username or email already exists!";
+                customAlert.style.display = "block";
+                overlay.style.display = "block";
+                return;
+            }
+
+            // Add new user to the array of users
+            var newUser = {
+                username: username,
+                password: password
+            };
+            existingUsers.push(newUser);
+
+            // Store updated user data in localStorage
+            localStorage.setItem("users", JSON.stringify(existingUsers));
+
+            customAlertMessage.innerText = "Sign up successful!";
+                customAlert.style.display = "block";
+                overlay.style.display = "block";
+            
+            // Redirect to login page after sign up
+            window.location.href = "login.html";
+        });
+
+        function hideCustomAlert() {
+        document.getElementById("overlay").style.display = "none";
+        document.getElementById("customAlert").style.display = "none";
+}
+
+function clearLocalStorage() {
+    localStorage.clear();
+    // Optionally display a confirmation message or redirect to another page
+}
+    </script>
+</body>
+
+</html>

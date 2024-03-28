@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login.css">
+    <title>Login-Spotify</title>
+</head>
+<body>
+   <header>
+    <div class="main">
+            <img src="spotify-logo (1).jpg" alt="" id="imge">
+    </div>
+   </header>
+    <section>
+        <div id="cont">
+            <br>
+            <h1 class="text">Log in to Spotify</h1>
+            <div class="buttons">
+                <button class="google" id="g"><img src="google.png" alt=""><span>Continue with Google</span></button>
+                <button class="facebook" id="f"><img src="facebook.png" alt=""><span>Continue with Facebook</span></button>
+                <button class="apple" id="a"><img src="apple.png" alt=""><span>Continue with Apple</span></button>
+            </div>
+            <div class="or">
+            <div class="line"></div>
+                <p>or</p>
+            <div class="line"></div>
+            </div>
+            <div class="form1">
+            <div class="f1">
+               <p class="em">Email or username</p>
+                <br>
+                <input type="text" 
+                placeholder="Email or username" id="email">
+            </div>
+            
+            <div class="f1">
+                <p class="p1">Password</p>
+                <br>
+                <div class="pass">
+                <input type="password"  id="password" placeholder="password" required>
+                <img onclick='togglePasswordVisibility()' 
+                id='toggle-icon' class='eye-icon' src="eyeshow.png">
+            </div>
+        </div>
+            <div class="switch">
+                <input type="checkbox" id="switch" >
+                <label for="switch"> Remember me</label>
+            </div>
+            <button class="mainbtn" id="loginn">Log In</button>
+            <button class="forgot">Forgot your password?</button>
+            </div>
+            <!-- <div class="hr"></div> -->
+            <div class="or">
+                <div class="lines"></div>
+                   
+                <!-- <div class="line"></div> -->
+                </div>
+            <div class="noaccount">
+                <p class="noacc">Don't have an account?</p>
+                <a href="signup.html" class="Sign">Sign up for Spotify</a>
+            </div>
+            <div id="customAlert" class="custom-alert">
+                <p id="customAlertMessage"></p>
+                <button class="close-btn" onclick="hideCustomAlert()">Ok</button>
+            </div>
+        </div>
+        <div id="overlay"></div>
+    </section>
+    <footer>
+        <div class="footer">
+            <p>This site is protected by reCAPTCHA and the Google <u>Privacy Policy</u> and <u> Terms of Service</u> apply.</p>
+        </div>
+
+    </footer>
+    <script>
+        function togglePasswordVisibility() {
+    const passwordInput = document.getElementById('password');
+    const toggleIcon = document.getElementById('toggle-icon');
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        passwordInput.style.border = 'none';
+        passwordInput.style.padding = '0';
+        passwordInput.style.outline = 'none';
+        toggleIcon.src = 'eyeshow.png';
+    } else {
+        passwordInput.type = 'password';
+        passwordInput.style.border = 'none';
+        passwordInput.style.padding = '0';
+        passwordInput.style.outline = 'none';
+        toggleIcon.src = 'eyehide.png';
+    }}
+
+    document.getElementById("loginn").addEventListener("click", function(event){
+    event.preventDefault();
+    var username = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var customAlert = document.getElementById("customAlert");
+    var customAlertMessage = document.getElementById("customAlertMessage");
+    var overlay = document.getElementById("overlay");
+    var users = JSON.parse(localStorage.getItem("users")) || [];
+    var user = users.find(function(user) {
+        return user.username === username && user.password === password;
+    });
+    if (user) {
+        // Redirect to index.html if login is successful
+        window.location.href = "index.html";
+    } else {
+        // Display custom alert for incorrect username or password
+        customAlertMessage.innerText = "Incorrect username or password";
+        customAlert.style.display = "block";
+        overlay.style.display = "block";
+    }
+});
+function hideCustomAlert() {
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("customAlert").style.display = "none";
+}
+
+    </script>
+</body>
+</html>

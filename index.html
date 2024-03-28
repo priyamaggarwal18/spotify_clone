@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Spotify clone ~ Priyam Aggarwal</title>
+    <link rel="icon" type="image/png" href="images/logo.png" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="left border">
+        <div class="home">
+          <div class="logo"><img src="./images/logo.svg" alt="" /></div>
+          <ul>
+            <li id="homebtn" onclick="homeClick()">
+              <img src="./images/home.svg" alt="home" />
+              <p>Home</p>
+            </li>
+            <li id="searchbtn" onclick="searchClick()">
+              <img src="./images/search.svg" alt="search" />
+              <p>Search</p>
+            </li>
+            <li>
+              <img src="./images/bar.svg" alt="search" />
+              <p>Your Library</p>
+            </li>
+          </ul>
+          <p class="font-style-1">playlist</p>
+          <div class="playlist">
+            <img src="images/create playlist.svg" alt="create logo" />
+            <p>Create Playlist</p>
+          </div>
+          <div class="playlist">
+            <img src="images/liked.svg" alt="liked logo" />
+            <p>Liked</p>
+          </div>
+          <div class="line"></div>
+        </div>
+        <img class="others" src="images/others.png" alt="others" class="src" />
+        <div class="song-info">
+          <img src="images/artist image/Arijit Singh/arijit.png" alt="arijit" />
+          <div>
+            <p class="song-name-2">song name</p>
+            <p class="artist-name-2">artist name</p>
+          </div>
+        </div>
+      </div>
+      <div class="right border">
+        <div id="background-gradient" class="background-gradient"></div>
+
+        <!--            ARIJIT SINGH                   -->
+        <div class="main3" id="div2">
+          <div class="upper1">
+            <img src="images/artist image/Arijit Singh/arijit.png" alt="" />
+            <div class="innerright">
+              <p>Playlist</p>
+              <p>Best of Arijit Singh</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus
+              </p>
+              <p>3.8Cr monthly listeners</p>
+            </div>
+          </div>
+          <div class="mainctrbtn">
+            <img src="images/main_3 btn grp/Play.svg" alt="play" />
+            <img
+              class="heart"
+              title="This is a tooltip message"
+              src="images/main_3 btn grp/heart.svg"
+              alt="heart"
+            />
+            <img src="images/main_3 btn grp/more_big.svg" alt="three dots" />
+          </div>
+          <div class="mainctrtitle">
+            <div class="left_side">
+              <img src="images/main_3 title/symbol.png" alt="hashtag" />
+              <p style="margin-left: 100px">TITLE</p>
+            </div>
+            <p style="margin-left: 485px">ALBUM</p>
+            <img
+              src="images/main_3 title/clock.png"
+              style="margin-left: 375px"
+            />
+          </div>
+          <div class="line2"></div>
+          <!--                           SONGS LIST                               -->
+          <div class="songs">
+            <li class="card3container">
+              <div class="img_grp" style="margin-right: 200px">
+                <p class="num">1</p>
+                <img
+                  class="song_img"
+                  src="images/artist image/Arijit Singh/1st.jpg"
+                  alt="first"
+                />
+                <div class="text-grp">
+                  <p>Satranga</p>
+                  <p style="font-size: 11px">
+                    Arijit Singh,Shreya Puranik,Siddharth-Garima
+                  </p>
+                </div>
+              </div>
+              <p style="margin-right: 350px">ANIMAL</p>
+              <p>4:31</p>
+            </li>
+
+            <li class="card3container">
+              <div class="img_grp" style="margin-right: 210px; width: 600px">
+                <p class="num">2</p>
+                <img
+                  class="song_img"
+                  src="images/artist image/Arijit Singh/2nd.jpg"
+                  alt="second"
+                />
+                <div class="text-grp">
+                  <p>Chaleya</p>
+                  <p style="font-size: 11px">
+                    Anirudh Ravichander,Arijit Singh,Shilpa
+                  </p>
+                </div>
+              </div>
+              <p style="margin-right: 360px">JAWAN</p>
+              <p>3:20</p>
+            </li>
+
+            <li class="card3container">
+              <div class="img_grp" style="margin-right: 210px; width: 600px">
+                <p class="num">3</p>
+                <img
+                  class="song_img"
+                  src="images/artist image/Arijit Singh/3rd.jpg"
+                  alt="third"
+                />
+                <div class="text-grp">
+                  <p>O Maahi</p>
+                  <p style="font-size: 11px">
+                    Pritam,Arijit Singh, Irshad Kamil
+                  </p>
+                </div>
+              </div>
+              <p style="margin-right: 360px">DUNKI</p>
+              <p>3:53</p>
+            </li>
+
+            <li class="card3container">
+              <div class="img_grp" style="margin-right: 210px; width: 600px">
+                <p class="num">4</p>
+                <img
+                  class="song_img"
+                  src="images/artist image/Arijit Singh/4th.jpg"
+                  alt="third"
+                />
+                <div class="text-grp">
+                  <p>Heeriye</p>
+                  <p style="font-size: 11px">
+                    Jasleen Royal,Arijit Singh,HarryKahanhai
+                  </p>
+                </div>
+              </div>
+              <p style="margin-right: 360px">Jasleen</p>
+              <p>3:14</p>
+            </li>
+
+            <li class="card3container">
+              <div class="img_grp" style="margin-right: 230px; width: 600px">
+                <p class="num">5</p>
+                <img
+                  class="song_img"
+                  src="images/artist image/Arijit Singh/5th.jpg"
+                  alt="third"
+                />
+                <div class="text-grp">
+                  <p>Apna Bana Le</p>
+                  <p style="font-size: 11px">
+                    Sachin Jigar,Arijit Singh,Amitabh.B
+                  </p>
+                </div>
+              </div>
+              <p style="margin-right: 360px">Bhediya</p>
+              <p>3:14</p>
+            </li>
+
+            <li class="card3container">
+              <div class="img_grp" style="margin-right: 200px">
+                <p class="num">6</p>
+                <img
+                  class="song_img"
+                  src="images/artist image/Arijit Singh/1st.jpg"
+                  alt="first"
+                />
+                <div class="text-grp">
+                  <p>Satranga</p>
+                  <p style="font-size: 11px">
+                    Arijit Singh,Shreya Puranik,Siddharth-Garima
+                  </p>
+                </div>
+              </div>
+              <p style="margin-right: 350px">ANIMAL</p>
+              <p>4:31</p>
+            </li>
+
+            <li class="card3container">
+              <div class="img_grp" style="margin-right: 210px; width: 600px">
+                <p class="num">7</p>
+                <img
+                  class="song_img"
+                  src="images/artist image/Arijit Singh/2nd.jpg"
+                  alt="second"
+                />
+                <div class="text-grp">
+                  <p>Chaleya</p>
+                  <p style="font-size: 11px">
+                    Anirudh Ravichander,Arijit Singh,Shilpa
+                  </p>
+                </div>
+              </div>
+              <p style="margin-right: 360px">JAWAN</p>
+              <p>3:20</p>
+            </li>
+
+            <li class="card3container">
+              <div class="img_grp" style="margin-right: 210px; width: 600px">
+                <p class="num">8</p>
+                <img
+                  class="song_img"
+                  src="images/artist image/Arijit Singh/3rd.jpg"
+                  alt="third"
+                />
+                <div class="text-grp">
+                  <p>O Maahi</p>
+                  <p style="font-size: 11px">
+                    Pritam,Arijit Singh, Irshad Kamil
+                  </p>
+                </div>
+              </div>
+              <p style="margin-right: 360px">DUNKI</p>
+              <p>3:53</p>
+            </li>
+
+            <li class="card3container">
+              <div class="img_grp" style="margin-right: 210px; width: 600px">
+                <p class="num">9</p>
+                <img
+                  class="song_img"
+                  src="images/artist image/Arijit Singh/4th.jpg"
+                  alt="third"
+                />
+                <div class="text-grp">
+                  <p>Heeriye</p>
+                  <p style="font-size: 11px">
+                    Jasleen Royal,Arijit Singh,HarryKahanhai
+                  </p>
+                </div>
+              </div>
+              <p style="margin-right: 360px">Jasleen</p>
+              <p>3:14</p>
+            </li>
+
+            <li class="card3container">
+              <div class="img_grp" style="margin-right: 230px; width: 600px">
+                <p class="num">10</p>
+                <img
+                  class="song_img"
+                  src="images/artist image/Arijit Singh/5th.jpg"
+                  alt="third"
+                />
+                <div class="text-grp">
+                  <p>Apna Bana Le</p>
+                  <p style="font-size: 11px">
+                    Sachin Jigar,Arijit Singh,Amitabh.B
+                  </p>
+                </div>
+              </div>
+              <p style="margin-right: 360px">Bhediya</p>
+              <p>3:14</p>
+            </li>
+          </div>
+        </div>
+
+        <!--                        Darshan Raval                    -->
+        <div class="main4" id="div3">
+          <div class="upper1">
+            <img src="images/artist image/darshan ravel/darshan.png" alt="" />
+            <div class="innerright">
+              <p>Playlist</p>
+              <p>Best of Darshan Raval</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus
+              </p>
+              <p>1.2Cr monthly listeners</p>
+            </div>
+          </div>
+          <div class="mainctrbtn">
+            <img src="images/main_3 btn grp/Play.svg" alt="play" />
+            <img
+              class="heart"
+              title="This is a tooltip message"
+              src="images/main_3 btn grp/heart.svg"
+              alt="heart"
+            />
+            <img src="images/main_3 btn grp/more_big.svg" alt="three dots" />
+          </div>
+          <div class="mainctrtitle">
+            <div class="left_side">
+              <img src="images/main_3 title/symbol.png" alt="hashtag" />
+              <p style="margin-left: 100px">TITLE</p>
+            </div>
+            <p style="margin-left: 485px">ALBUM</p>
+            <img
+              src="images/main_3 title/clock.png"
+              style="margin-left: 375px"
+            />
+          </div>
+          <div class="line2"></div>
+          <!--                           SONGS LIST                               -->
+          <div class="songs">
+            <li class="card3container">
+              <div class="img_grp" style="margin-right: 210px; width: 600px">
+                <p class="num">1</p>
+                <img
+                  class="song_img"
+                  src="images/artist image/darshan ravel/1st.jpg"
+                  alt="third"
+                />
+                <div class="text-grp">
+                  <p>Mahiye Jinna Sohna</p>
+                  <p style="font-size: 11px">Darshan Raval</p>
+                </div>
+              </div>
+              <p style="margin-right: 360px">Dard</p>
+              <p>3:01</p>
+            </li>
+
+            <li class="card3container">
+              <div class="img_grp" style="margin-right: 210px; width: 600px">
+                <p class="num">2</p>
+                <img
+                  class="song_img"
+                  src="images/artist image/darshan ravel/2nd.jpg"
+                  alt="third"
+                />
+                <div class="text-grp">
+                  <p>Mannat</p>
+                  <p style="font-size: 11px">Darshan Raval, Prakriti Kakar</p>
+                </div>
+              </div>
+              <p style="margin-right: 360px">Dard</p>
+              <p>3:30</p>
+            </li>
+
+            <li class="card3container">
+                <div class="img_grp" style="margin-right: 230px; width: 600px">
+                  <p class="num">3</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/darshan ravel/3rd.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>Asal Mein</p>
+                    <p style="font-size: 11px">Darshan Raval</p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Dard</p>
+                <p>3:44</p>
+              </li>
+
+              <li class="card3container">
+                <div class="img_grp" style="margin-right: 210px; width: 600px">
+                  <p class="num">4</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/darshan ravel/4th.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>Sajan Ve</p>
+                    <p style="font-size: 11px">Darshan Raval</p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Dard</p>
+                <p>2:51</p>
+              </li>
+
+              <li class="card3container">
+                <div class="img_grp" style="margin-right: 210px; width: 600px">
+                  <p class="num">5</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/darshan ravel/2nd.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>Mehrama</p>
+                    <p style="font-size: 11px">Pritam, Darshan Raval, Antara Mitra</p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Love</p>
+                <p>3:30</p>
+              </li>
+
+              <li class="card3container">
+                <div class="img_grp" style="margin-right: 210px; width: 600px">
+                  <p class="num">6</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/darshan ravel/1st.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>Mahiye Jinna Sohna</p>
+                    <p style="font-size: 11px">Darshan Raval</p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Dard</p>
+                <p>3:01</p>
+              </li>
+  
+              <li class="card3container">
+                <div class="img_grp" style="margin-right: 210px; width: 600px">
+                  <p class="num">7</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/darshan ravel/2nd.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>Mannat</p>
+                    <p style="font-size: 11px">Darshan Raval, Prakriti Kakar</p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Dard</p>
+                <p>3:30</p>
+              </li>
+  
+              <li class="card3container">
+                  <div class="img_grp" style="margin-right: 230px; width: 600px">
+                    <p class="num">8</p>
+                    <img
+                      class="song_img"
+                      src="images/artist image/darshan ravel/3rd.jpg"
+                      alt="third"
+                    />
+                    <div class="text-grp">
+                      <p>Asal Mein</p>
+                      <p style="font-size: 11px">Darshan Raval</p>
+                    </div>
+                  </div>
+                  <p style="margin-right: 360px">Dard</p>
+                  <p>3:44</p>
+                </li>
+  
+                <li class="card3container">
+                  <div class="img_grp" style="margin-right: 210px; width: 600px">
+                    <p class="num">9</p>
+                    <img
+                      class="song_img"
+                      src="images/artist image/darshan ravel/4th.jpg"
+                      alt="third"
+                    />
+                    <div class="text-grp">
+                      <p>Sajan Ve</p>
+                      <p style="font-size: 11px">Darshan Raval</p>
+                    </div>
+                  </div>
+                  <p style="margin-right: 360px">Dard</p>
+                  <p>2:51</p>
+                </li>
+  
+                <li class="card3container">
+                  <div class="img_grp" style="margin-right: 210px; width: 600px">
+                    <p class="num">10</p>
+                    <img
+                      class="song_img"
+                      src="images/artist image/darshan ravel/2nd.jpg"
+                      alt="third"
+                    />
+                    <div class="text-grp">
+                      <p>Mehrama</p>
+                      <p style="font-size: 11px">Pritam, Darshan Raval, Antara Mitra</p>
+                    </div>
+                  </div>
+                  <p style="margin-right: 360px">Love</p>
+                  <p>3:30</p>
+                </li>
+            
+          </div>
+        </div>
+        <!--                      AUR                   -->
+        <div class="main5" id="div4">
+          <div class="upper1">
+            <img src="images/artist image/aur/aur.png" alt="" />
+            <div class="innerright">
+              <p>Playlist</p>
+              <p>Best of AUR</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus
+              </p>
+              <p>90lac monthly listeners</p>
+            </div>
+          </div>
+          <div class="mainctrbtn">
+            <img src="images/main_3 btn grp/Play.svg" alt="play" />
+            <img
+              class="heart"
+              title="This is a tooltip message"
+              src="images/main_3 btn grp/heart.svg"
+              alt="heart"
+            />
+            <img src="images/main_3 btn grp/more_big.svg" alt="three dots" />
+          </div>
+          <div class="mainctrtitle">
+            <div class="left_side">
+              <img src="images/main_3 title/symbol.png" alt="hashtag" />
+              <p style="margin-left: 100px">TITLE</p>
+            </div>
+            <p style="margin-left: 485px">ALBUM</p>
+            <img
+              src="images/main_3 title/clock.png"
+              style="margin-left: 375px"
+            />
+          </div>
+          <div class="line2"></div>
+          <!--                           SONGS LIST                               -->
+          <div class="songs">
+            <li class="card3container">
+                <div class="img_grp" style="margin-right: 230px; width: 600px">
+                  <p class="num">1</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/aur/1.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>Tu hai kahan</p>
+                    <p style="font-size: 11px">
+                      AUR
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Chill</p>
+                <p>4:23</p>
+              </li>
+
+              <li class="card3container">
+                <div class="img_grp" style="margin-right: 230px; width: 600px">
+                  <p class="num">2</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/aur/2.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>Shikayat</p>
+                    <p style="font-size: 11px">
+                      AUR
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Chill</p>
+                <p>4:30</p>
+              </li>
+
+              <li class="card3container">
+                <div class="img_grp" style="margin-right: 230px; width: 600px">
+                  <p class="num">3</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/aur/3rd.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>Tu hai kahan (feat.ZAYN)</p>
+                    <p style="font-size: 11px">
+                      AUR
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Chill</p>
+                <p>4:30</p>
+              </li>
+
+              <li class="card3container">
+                <div class="img_grp" style="margin-right: 230px; width: 600px">
+                  <p class="num">4</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/aur/4th.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>Long time no see</p>
+                    <p style="font-size: 11px">
+                      Taimour Baig, AUR
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Chill</p>
+                <p>3:38</p>
+              </li>
+
+              <li class="card3container">
+                <div class="img_grp" style="margin-right: 230px; width: 600px">
+                  <p class="num">5</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/aur/5th.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>Sometimes</p>
+                    <p style="font-size: 11px">
+                      AUR
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Chill</p>
+                <p>3:16</p>
+              </li>
+
+              <li class="card3container">
+                <div class="img_grp" style="margin-right: 230px; width: 600px">
+                  <p class="num">6</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/aur/1.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>Tu hai kahan</p>
+                    <p style="font-size: 11px">
+                      AUR
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Chill</p>
+                <p>4:23</p>
+              </li>
+
+              <li class="card3container">
+                <div class="img_grp" style="margin-right: 230px; width: 600px">
+                  <p class="num">7</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/aur/2.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>Shikayat</p>
+                    <p style="font-size: 11px">
+                      AUR
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Chill</p>
+                <p>4:30</p>
+              </li>
+
+              <li class="card3container">
+                <div class="img_grp" style="margin-right: 230px; width: 600px">
+                  <p class="num">8</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/aur/3rd.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>Tu hai kahan (feat.ZAYN)</p>
+                    <p style="font-size: 11px">
+                      AUR
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Chill</p>
+                <p>4:30</p>
+              </li>
+
+              <li class="card3container">
+                <div class="img_grp" style="margin-right: 230px; width: 600px">
+                  <p class="num">9</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/aur/4th.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>Long time no see</p>
+                    <p style="font-size: 11px">
+                      Taimour Baig, AUR
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Chill</p>
+                <p>3:38</p>
+              </li>
+
+              <li class="card3container">
+                <div class="img_grp" style="margin-right: 230px; width: 600px">
+                  <p class="num">10</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/aur/5th.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>Sometimes</p>
+                    <p style="font-size: 11px">
+                      AUR
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Chill</p>
+                <p>3:16</p>
+              </li>
+          </div>
+        </div>
+
+        <!--                One Direction                    -->
+        <div class="main6" id="div5">
+          <div class="upper1">
+            <img
+              src="images/artist image/one direction/onedirection.png"
+              alt=""
+            />
+            <div class="innerright">
+              <p>Playlist</p>
+              <p>Best of One Direction</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus
+              </p>
+              <p>2Cr monthly listeners</p>
+            </div>
+          </div>
+          <div class="mainctrbtn">
+            <img src="images/main_3 btn grp/Play.svg" alt="play" />
+            <img
+              class="heart"
+              title="This is a tooltip message"
+              src="images/main_3 btn grp/heart.svg"
+              alt="heart"
+            />
+            <img src="images/main_3 btn grp/more_big.svg" alt="three dots" />
+          </div>
+          <div class="mainctrtitle">
+            <div class="left_side">
+              <img src="images/main_3 title/symbol.png" alt="hashtag" />
+              <p style="margin-left: 100px">TITLE</p>
+            </div>
+            <p style="margin-left: 485px">ALBUM</p>
+            <img
+              src="images/main_3 title/clock.png"
+              style="margin-left: 375px"
+            />
+          </div>
+          <div class="line2"></div>
+          <!--                           SONGS LIST                               -->
+          <div class="songs">
+            <li class="card3container">
+              <div class="img_grp" style="margin-right: 230px; width: 600px">
+                <p class="num">1</p>
+                <img
+                  class="song_img"
+                  src="images/artist image/one direction/1.jpg"
+                  alt="third"
+                />
+                <div class="text-grp">
+                  <p>Night Changes</p>
+                  <p style="font-size: 11px">
+                    One Direction
+                  </p>
+                </div>
+              </div>
+              <p style="margin-right: 360px">Memories</p>
+              <p>3:46</p>
+            </li>
+
+            <li class="card3container">
+                <div class="img_grp" style="margin-right: 200px; width: 1000px">
+                  <p class="num">2</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/one direction/2.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>What makes you beautiful</p>
+                    <p style="font-size: 11px">
+                      One Direction
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Memories</p>
+                <p>3:19</p>
+              </li>
+
+              <li class="card3container">
+                <div class="img_grp" style="margin-right: 230px; width: 600px">
+                  <p class="num">3</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/one direction/3.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>Story of my life</p>
+                    <p style="font-size: 11px">
+                      One Direction
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Memories</p>
+                <p>3:19</p>
+              </li>
+
+              <li class="card3container">
+                <div class="img_grp" style="margin-right: 230px; width: 600px">
+                  <p class="num">4</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/one direction/4.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>Steal my Girl</p>
+                    <p style="font-size: 11px">
+                      One Direction
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Chill</p>
+                <p>3:48</p>
+              </li>
+
+              <li class="card3container">
+                <div class="img_grp" style="margin-right: 230px; width: 600px">
+                  <p class="num">5</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/one direction/5.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>Drag Me Down</p>
+                    <p style="font-size: 11px">
+                      One Direction
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Memories</p>
+                <p>3:12</p>
+              </li>
+
+              <li class="card3container">
+                <div class="img_grp" style="margin-right: 230px; width: 600px">
+                  <p class="num">6</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/one direction/1.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>Night Changes</p>
+                    <p style="font-size: 11px">
+                      One Direction
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Memories</p>
+                <p>3:46</p>
+              </li>
+  
+              <li class="card3container">
+                  <div class="img_grp" style="margin-right: 200px; width: 1000px">
+                    <p class="num">7</p>
+                    <img
+                      class="song_img"
+                      src="images/artist image/one direction/2.jpg"
+                      alt="third"
+                    />
+                    <div class="text-grp">
+                      <p>What makes you beautiful</p>
+                      <p style="font-size: 11px">
+                        One Direction
+                      </p>
+                    </div>
+                  </div>
+                  <p style="margin-right: 360px">Memories</p>
+                  <p>3:19</p>
+                </li>
+  
+                <li class="card3container">
+                  <div class="img_grp" style="margin-right: 230px; width: 600px">
+                    <p class="num">8</p>
+                    <img
+                      class="song_img"
+                      src="images/artist image/one direction/3.jpg"
+                      alt="third"
+                    />
+                    <div class="text-grp">
+                      <p>Story of my life</p>
+                      <p style="font-size: 11px">
+                        One Direction
+                      </p>
+                    </div>
+                  </div>
+                  <p style="margin-right: 360px">Memories</p>
+                  <p>3:19</p>
+                </li>
+  
+                <li class="card3container">
+                  <div class="img_grp" style="margin-right: 230px; width: 600px">
+                    <p class="num">9</p>
+                    <img
+                      class="song_img"
+                      src="images/artist image/one direction/4.jpg"
+                      alt="third"
+                    />
+                    <div class="text-grp">
+                      <p>Steal my Girl</p>
+                      <p style="font-size: 11px">
+                        One Direction
+                      </p>
+                    </div>
+                  </div>
+                  <p style="margin-right: 360px">Chill</p>
+                  <p>3:48</p>
+                </li>
+  
+                <li class="card3container">
+                  <div class="img_grp" style="margin-right: 230px; width: 600px">
+                    <p class="num">10</p>
+                    <img
+                      class="song_img"
+                      src="images/artist image/one direction/5.jpg"
+                      alt="third"
+                    />
+                    <div class="text-grp">
+                      <p>Drag Me Down</p>
+                      <p style="font-size: 11px">
+                        One Direction
+                      </p>
+                    </div>
+                  </div>
+                  <p style="margin-right: 360px">Memories</p>
+                  <p>3:12</p>
+                </li>
+          </div>
+        </div>
+
+        <!--                    Pritam                      -->
+
+
+        <div class="main7" id="div6">
+          <div class="upper1">
+            <img src="images/artist image/Pritam/Pritam.png" alt="" />
+            <div class="innerright">
+              <p>Playlist</p>
+              <p>Best of Pritam</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus
+              </p>
+              <p>1Cr monthly listeners</p>
+            </div>
+          </div>
+          <div class="mainctrbtn">
+            <img src="images/main_3 btn grp/Play.svg" alt="play" />
+            <img
+              class="heart"
+              title="This is a tooltip message"
+              src="images/main_3 btn grp/heart.svg"
+              alt="heart"
+            />
+            <img src="images/main_3 btn grp/more_big.svg" alt="three dots" />
+          </div>
+          <div class="mainctrtitle">
+            <div class="left_side">
+              <img src="images/main_3 title/symbol.png" alt="hashtag" />
+              <p style="margin-left: 100px">TITLE</p>
+            </div>
+            <p style="margin-left: 485px">ALBUM</p>
+            <img
+              src="images/main_3 title/clock.png"
+              style="margin-left: 375px"
+            />
+          </div>
+          <div class="line2"></div>
+          <!--                           SONGS LIST                               -->
+          <div class="songs">
+            <li class="card3container">
+              <div class="img_grp" style="margin-right: 230px; width: 600px">
+                <p class="num">1</p>
+                <img
+                  class="song_img"
+                  src="images/artist image/Pritam/1.jpg"
+                  alt="third"
+                />
+                <div class="text-grp">
+                  <p>BIBA</p>
+                  <p style="font-size: 11px">
+                    Marshmello, Pritam
+                  </p>
+                </div>
+              </div>
+              <p style="margin-right: 360px">Indie</p>
+              <p>2:55</p>
+            </li>
+
+            <li class="card3container">
+                <div class="img_grp" style="margin-right: 230px; width: 600px">
+                  <p class="num">2</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/Pritam/2.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>Hua Main</p>
+                    <p style="font-size: 11px">
+                      Raghav Chaitanya, Pritam
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Indie</p>
+                <p>4:37</p>
+              </li>
+
+              <li class="card3container">
+                <div class="img_grp" style="margin-right: 230px; width: 600px">
+                  <p class="num">3</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/Pritam/3.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>Kesariya</p>
+                    <p style="font-size: 11px">
+                      Pritam,Amitabh .B
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Indie</p>
+                <p>4:28</p>
+              </li>
+
+              <li class="card3container">
+                <div class="img_grp" style="margin-right: 230px; width: 600px">
+                  <p class="num">4</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/Pritam/4.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>Tum Kya Mile</p>
+                    <p style="font-size: 11px">
+                      Arijit Singh, Pritam, Shreya Ghoshal
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Indie</p>
+                <p>4:37</p>
+              </li>
+
+              <li class="card3container">
+                <div class="img_grp" style="margin-right: 230px; width: 600px">
+                  <p class="num">5</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/Pritam/5.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>What Jhumka</p>
+                    <p style="font-size: 11px">
+                      Arijit Singh, Pritam
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Indie</p>
+                <p>3:33</p>
+              </li>
+
+              <li class="card3container">
+                <div class="img_grp" style="margin-right: 230px; width: 600px">
+                  <p class="num">6</p>
+                  <img
+                    class="song_img"
+                    src="images/artist image/Pritam/1.jpg"
+                    alt="third"
+                  />
+                  <div class="text-grp">
+                    <p>BIBA</p>
+                    <p style="font-size: 11px">
+                      Marshmello, Pritam
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-right: 360px">Indie</p>
+                <p>2:55</p>
+              </li>
+  
+              <li class="card3container">
+                  <div class="img_grp" style="margin-right: 230px; width: 600px">
+                    <p class="num">7</p>
+                    <img
+                      class="song_img"
+                      src="images/artist image/Pritam/2.jpg"
+                      alt="third"
+                    />
+                    <div class="text-grp">
+                      <p>Hua Main</p>
+                      <p style="font-size: 11px">
+                        Raghav Chaitanya, Pritam
+                      </p>
+                    </div>
+                  </div>
+                  <p style="margin-right: 360px">Indie</p>
+                  <p>4:37</p>
+                </li>
+  
+                <li class="card3container">
+                  <div class="img_grp" style="margin-right: 230px; width: 600px">
+                    <p class="num">8</p>
+                    <img
+                      class="song_img"
+                      src="images/artist image/Pritam/3.jpg"
+                      alt="third"
+                    />
+                    <div class="text-grp">
+                      <p>Kesariya</p>
+                      <p style="font-size: 11px">
+                        Pritam,Amitabh .B
+                      </p>
+                    </div>
+                  </div>
+                  <p style="margin-right: 360px">Indie</p>
+                  <p>4:28</p>
+                </li>
+  
+                <li class="card3container">
+                  <div class="img_grp" style="margin-right: 230px; width: 600px">
+                    <p class="num">9</p>
+                    <img
+                      class="song_img"
+                      src="images/artist image/Pritam/4.jpg"
+                      alt="third"
+                    />
+                    <div class="text-grp">
+                      <p>Tum Kya Mile</p>
+                      <p style="font-size: 11px">
+                        Arijit Singh, Pritam, Shreya Ghoshal
+                      </p>
+                    </div>
+                  </div>
+                  <p style="margin-right: 360px">Indie</p>
+                  <p>4:37</p>
+                </li>
+  
+                <li class="card3container">
+                  <div class="img_grp" style="margin-right: 230px; width: 600px">
+                    <p class="num">10</p>
+                    <img
+                      class="song_img"
+                      src="images/artist image/Pritam/5.jpg"
+                      alt="third"
+                    />
+                    <div class="text-grp">
+                      <p>What Jhumka</p>
+                      <p style="font-size: 11px">
+                        Arijit Singh, Pritam
+                      </p>
+                    </div>
+                  </div>
+                  <p style="margin-right: 360px">Indie</p>
+                  <p>3:33</p>
+                </li>
+          </div>
+        </div>
+
+        <!--                                MAIN PAGE                         -->
+
+        <div class="main2" id="div1">
+          <div class="upper">
+            <div class="left-side">
+              <p id="greeting">Good Afternoon</p>
+              <p id="time-date">12:15 PM 14-01-2024</p>
+            </div>
+            <div class="right-side">
+              <a href="premium.html" target="_blank"><button class="premium" >Premium</button></a>
+              <p>Support</p>
+              <p>Download</p>
+              <p id="name">user</p>
+              <div id="name-circle">P</div>
+            </div>
+          </div>
+
+          <div class="container-1">
+            <div class="card">
+              <img src="./images/cardimages/1.png" alt="first" />
+              <p>Pop Right Now</p>
+            </div>
+            <div class="card">
+              <img src="./images/cardimages/2.png" alt="first" />
+              <p>Electrify the Chart</p>
+            </div>
+            <div class="card">
+              <img src="./images/cardimages/3.png" alt="first" />
+              <p>Sonic Bliss Parade</p>
+            </div>
+            <div class="card">
+              <img src="./images/cardimages/4.png" alt="first" />
+              <p>Pop Fusion Frenzy</p>
+            </div>
+          </div>
+          <div class="container-2">
+            <div class="card">
+              <img src="./images/cardimages/5.png" alt="first" />
+              <p>Rhythmic Rendezvous</p>
+            </div>
+            <div class="card">
+              <img src="./images/cardimages/6.png" alt="first" />
+              <p>Chart-Topping Ecstasy</p>
+            </div>
+            <div class="card">
+              <img src="./images/cardimages/7.png" alt="first" />
+              <p>Poptastic Groove</p>
+            </div>
+            <div class="card">
+              <img src="./images/cardimages/8.png" alt="first" />
+              <p>Beats Extravaganza</p>
+            </div>
+          </div>
+          <p class="artist">Popular Artists</p>
+          <div class="container-3_outer">
+            <div class="container-3">
+              <div onclick="toggleDiv1()" class="card2">
+                <img src="images/card2images/1.svg" alt="" />
+                <h1>Arijit Singh</h1>
+                <p>Artist</p>
+                <div class="play-icon">
+                  <div class="circle">
+                      <div class="triangle"></div>
+                  </div>
+              </div>
+              </div>
+              <div onclick="toggleDiv2()" class="card2">
+                <img src="images/card2images/2.svg" alt="" />
+                <h1>Darshan Raval</h1>
+                <p>Artist</p>
+                <div class="play-icon">
+                  <div class="circle">
+                      <div class="triangle"></div>
+                  </div>
+              </div>
+              </div>
+              <div onclick="toggleDiv3()" class="card2">
+                <img src="images/card2images/3.svg" alt="" />
+                <h1>Aur</h1>
+                <p>Artist</p>
+                <div class="play-icon">
+                  <div class="circle">
+                      <div class="triangle"></div>
+                  </div>
+              </div>
+              </div>
+              <div onclick="toggleDiv4()" class="card2">
+                <img src="images/card2images/4.svg" alt="" />
+                <h1>One Direction</h1>
+                <p>Artist</p>
+                <div class="play-icon">
+                  <div class="circle">
+                      <div class="triangle"></div>
+                  </div>
+              </div>
+              </div>
+              <div onclick="toggleDiv5()" class="card2">
+                <img src="images/card2images/6.svg" alt="" />
+                <h1>Pritam</h1>
+                <p>Artist</p>
+                <div class="play-icon">
+                  <div class="circle">
+                      <div class="triangle"></div>
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="searchdiv" id="searchdiv">
+          <div class="searchbar">
+            <div class="outer">
+              <div>
+                <img onclick="homeClick()" src="images-search/back.svg" />
+                <img src="images-search/forward.svg" />
+              </div>
+              <div class="search">
+                <img src="images-search/search-line.svg" />
+                <input
+                  type="text"
+                  placeholder="What do you want to listen to ?"
+                />
+              </div>
+            </div>
+            <div class="right-side">
+              <a href="premium.html" target="_blank"><button class="premium" >Premium</button></a>
+              <p>Support</p>
+              <p>Download</p>
+            </div>
+          </div>
+
+          <p class="Browse">Browse All</p>
+          <div class="scroll">
+            <img src="images-search/img1.png" />
+            <img src="images-search/img2.png" />
+            <img src="images-search/img2.png" />
+            <img src="images-search/img3.png" />
+            <img src="images-search/img4.png" />
+            <img src="images-search/img5.png" />
+            <img src="images-search/img6.png" />
+            <img src="images-search/img7.png" />
+            <img src="images-search/img8.png" />
+            <img src="images-search/img9.png" />
+            <img src="images-search/img10.png" />
+            <img src="images-search/img11.png" />
+            <img src="images-search/img12.png" />
+            <img src="images-search/img13.png" />
+            <img src="images-search/img14.png" />
+            <img src="images-search/img15.png" />
+            <img src="images-search/img1.png" />
+            <img src="images-search/img2.png" />
+            <img src="images-search/img2.png" />
+            <img src="images-search/img3.png" />
+            <img src="images-search/img4.png" />
+            <img src="images-search/img5.png" />
+            <img src="images-search/img6.png" />
+            <img src="images-search/img7.png" />
+            <img src="images-search/img8.png" />
+            <img src="images-search/img9.png" />
+            <img src="images-search/img10.png" />
+            <img src="images-search/img11.png" />
+            <img src="images-search/img12.png" />
+            <img src="images-search/img13.png" />
+            <img src="images-search/img14.png" />
+            <img src="images-search/img15.png" />
+            <img src="images-search/img1.png" />
+            <img src="images-search/img2.png" />
+            <img src="images-search/img2.png" />
+            <img src="images-search/img3.png" />
+            <img src="images-search/img4.png" />
+            <img src="images-search/img5.png" />
+            <img src="images-search/img6.png" />
+            <img src="images-search/img7.png" />
+            <img src="images-search/img8.png" />
+            <img src="images-search/img9.png" />
+            <img src="images-search/img10.png" />
+          </div>
+        </div>
+        <div class="playbar">
+          <div class="mid">
+            <div class="song-buttons">
+              <img src="images/playbar/shuffle.svg" alt="shuffle" />
+              <img src="images/playbar/back.svg" alt="previous" />
+              <img src="images/playbar/play.svg" alt="play" />
+              <img src="images/playbar/forward.svg" alt="next" />
+              <img src="images/playbar/repeat.svg" alt="repeat" />
+            </div>
+            <div class="song-time">
+              <p>0:00</p>
+              <input
+                type="range"
+                name="range"
+                id="myProgressBar"
+                min="0"
+                max="100"
+              />
+              <p>02:36</p>
+            </div>
+            <img src="images/volum area/" alt="" />
+          </div>
+          <div style="padding-left: 3rem">
+            <br />
+            <img src="images/volume_control.svg" alt="image control" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
